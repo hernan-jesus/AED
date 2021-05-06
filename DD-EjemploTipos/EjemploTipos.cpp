@@ -6,17 +6,18 @@
 // Description : Hello World in C++, Ansi-style
 //============================================================================
 #define NDEBUG
-#include <assert.h>
+#include <cassert>
 int main() {
-   bool a=true;
-   char b='b';
-   unsigned c=5;
-   int d=10;
-   double e=10.568;
-
-   void assert(a==false);
-   void assert(b=='c');
-   void assert(c==8);
-   void assert(d==7);
-   void assert(e==5.00);
+   //Boolean
+   void assert(false!=true);
+   //Unsigned
+   void assert(1+1==2);
+   //Int
+   void assert(1-2==-1);
+   //Char
+   void assert('c'=='c');
+   //Double
+   void assert(3.0/2.0==1.5);
+   //String
+   void assert("hola "+"mundo"="hola mundo");
 }
